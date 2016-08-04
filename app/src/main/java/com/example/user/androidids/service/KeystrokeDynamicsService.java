@@ -109,8 +109,8 @@ public class KeystrokeDynamicsService extends Activity implements OnTouchListene
         try {
             fos = openFileOutput(filename,Context.MODE_PRIVATE);
             mtrain = (Button)findViewById(R.id.train);
-         //   setContentView(R.layout.main);
-     /*       // adjusting key regarding window sizes
+            setContentView(R.layout.main);
+            // adjusting key regarding window sizes
             setKeys();
             setFrow();
             setSrow();
@@ -128,10 +128,36 @@ public class KeystrokeDynamicsService extends Activity implements OnTouchListene
             //mtrain.setOnTouchListener(this);
             //mEt1.setOnClickListener(this);
             mLayout = (RelativeLayout) findViewById(R.id.xK1);
-            mKLayout = (RelativeLayout) findViewById(R.id.xKeyBoard);*/
+            mKLayout = (RelativeLayout) findViewById(R.id.xKeyBoard);
         }  catch (Exception e) {
             Log.w(getClass().getName(), e.toString());
         }
+
+        //a
+        mB[0].setOnTouchListener(new OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+
+                String buttonText = (String)v.getTag();
+                if(event.getAction() == MotionEvent.ACTION_DOWN) {
+                    press = System.currentTimeMillis();
+                    text.addElement(buttonText);
+                    p.addElement(press);
+                }
+                else if (event.getAction() == MotionEvent.ACTION_UP) {
+                    release = System.currentTimeMillis();
+                    keyhold=release-press;
+                    //System.out.println(buttonText+keyhold);
+                    r.addElement(release);
+                    addText(v);
+                    ////disp(buttonText+keyhold);
+
+                }
+                //done();
+                return true;
+            }
+
+        });
     }
 
 
