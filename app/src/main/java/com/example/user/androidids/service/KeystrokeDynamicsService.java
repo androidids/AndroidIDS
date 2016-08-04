@@ -109,8 +109,8 @@ public class KeystrokeDynamicsService extends Activity implements OnTouchListene
         try {
             fos = openFileOutput(filename,Context.MODE_PRIVATE);
             mtrain = (Button)findViewById(R.id.train);
-            setContentView(R.layout.main);
-            // adjusting key regarding window sizes
+         //   setContentView(R.layout.main);
+     /*       // adjusting key regarding window sizes
             setKeys();
             setFrow();
             setSrow();
@@ -128,7 +128,7 @@ public class KeystrokeDynamicsService extends Activity implements OnTouchListene
             //mtrain.setOnTouchListener(this);
             //mEt1.setOnClickListener(this);
             mLayout = (RelativeLayout) findViewById(R.id.xK1);
-            mKLayout = (RelativeLayout) findViewById(R.id.xKeyBoard);
+            mKLayout = (RelativeLayout) findViewById(R.id.xKeyBoard);*/
         }  catch (Exception e) {
             Log.w(getClass().getName(), e.toString());
         }
