@@ -133,5 +133,31 @@ public class KeystrokeDynamicsService extends Activity implements OnTouchListene
             Log.w(getClass().getName(), e.toString());
         }
 
+        //a
+        mB[0].setOnTouchListener(new OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+
+                String buttonText = (String)v.getTag();
+                if(event.getAction() == MotionEvent.ACTION_DOWN) {
+                    press = System.currentTimeMillis();
+                    text.addElement(buttonText);
+                    p.addElement(press);
+                }
+                else if (event.getAction() == MotionEvent.ACTION_UP) {
+                    release = System.currentTimeMillis();
+                    keyhold=release-press;
+                    //System.out.println(buttonText+keyhold);
+                    r.addElement(release);
+                    addText(v);
+                    ////disp(buttonText+keyhold);
+
+                }
+                //done();
+                return true;
+            }
+
+        });
+
 
 }
