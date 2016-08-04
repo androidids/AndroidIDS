@@ -6,8 +6,7 @@
     </shared>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="02601e32-2383-49b7-ac79-5384e1f59a67" name="Default" comment="inital commit 2">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/user/androidids/service/KeystrokeDynamicsService.java" afterPath="" />
+    <list default="true" id="02601e32-2383-49b7-ac79-5384e1f59a67" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="AndroidIDS.iws" />
@@ -58,7 +57,7 @@
         <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-0.34170854">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -2375,7 +2374,13 @@
       <option name="project" value="LOCAL" />
       <updated>1470347926866</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="inital commit 2">
+      <created>1470348165653</created>
+      <option name="number" value="00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1470348165653</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2533,7 +2538,7 @@
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.34170854">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
         </state>
       </provider>
