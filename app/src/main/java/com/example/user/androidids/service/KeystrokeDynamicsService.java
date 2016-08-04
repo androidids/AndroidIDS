@@ -33,6 +33,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RelativeLayout;
 
+import com.example.user.androidids.R;
+
 public class KeystrokeDynamicsService extends Activity implements OnTouchListener, OnClickListener, OnFocusChangeListener{
 
     private String password = "HELLOWORLD";
@@ -100,5 +102,36 @@ public class KeystrokeDynamicsService extends Activity implements OnTouchListene
     private Button mB[] = new Button[27];
     Button mtrain,mtest;
 
-    
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        try {
+            fos=openFileOutput(filename,Context.MODE_PRIVATE);
+            mtrain=(Button)findViewById(R.id.train);
+            setContentView(R.layout.main);
+            // adjusting key regarding window sizes
+            setKeys();
+            setFrow();
+            setSrow();
+            setTrow();
+            setForow();
+            mEt = (EditText) findViewById(R.id.xEt);
+            mEt.setOnTouchListener(this);
+            mEt.setOnFocusChangeListener(this);C.
+
+                    //mtrain.setOnTouchListener(this);
+
+                    //mEt1.setOnTouchListener(this);
+                    //mEt1.setOnFocusChangeListener(this);
+                            mEt.setOnClickListener(this);
+            //mtrain.setOnTouchListener(this);
+            //mEt1.setOnClickListener(this);
+            mLayout = (RelativeLayout) findViewById(R.id.xK1);
+            mKLayout = (RelativeLayout) findViewById(R.id.xKeyBoard);
+
+        } catch (Exception e) {
+            Log.w(getClass().getName(), e.toString());
+        }
+
+
 }
