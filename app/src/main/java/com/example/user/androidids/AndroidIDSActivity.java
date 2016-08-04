@@ -3,7 +3,7 @@ package com.example.user.androidids;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class AdnroidIDSActivity extends AppCompatActivity {
+public class AndroidIDSActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
