@@ -563,7 +563,269 @@ public class KeystrokeDynamicsService extends Activity implements OnTouchListene
 
         });
 
-        
+        //q
+        mB[16].setOnTouchListener(new OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+
+                String buttonText = (String)v.getTag();
+                if(event.getAction() == MotionEvent.ACTION_DOWN) {
+                    press = System.currentTimeMillis();
+                    text.addElement(buttonText);
+                    p.addElement(press);
+                }
+                else if (event.getAction() == MotionEvent.ACTION_UP) {
+                    release = System.currentTimeMillis();
+                    keyhold=release-press;
+                    System.out.println(buttonText+keyhold);
+                    r.addElement(release);
+                    addText(v);
+                    //disp(buttonText+keyhold);
+
+                }
+
+                return true;
+            }
+
+        });
+
+
+        //r
+        mB[17].setOnTouchListener(new OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+
+                String buttonText = (String)v.getTag();
+                if(event.getAction() == MotionEvent.ACTION_DOWN) {
+                    press = System.currentTimeMillis();
+                    text.addElement(buttonText);
+                    p.addElement(press);
+                }
+                else if (event.getAction() == MotionEvent.ACTION_UP) {
+                    release = System.currentTimeMillis();
+                    keyhold=release-press;
+                    System.out.println(buttonText+keyhold);
+                    r.addElement(release);
+                    addText(v);
+                    //disp(buttonText+keyhold);
+
+                }
+
+                return true;
+            }
+
+        });
+
+        //s
+        mB[18].setOnTouchListener(new OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+
+                String buttonText = (String)v.getTag();
+                if(event.getAction() == MotionEvent.ACTION_DOWN) {
+                    press = System.currentTimeMillis();
+                    text.addElement(buttonText);
+                    p.addElement(press);
+                }
+                else if (event.getAction() == MotionEvent.ACTION_UP) {
+                    release = System.currentTimeMillis();
+                    keyhold=release-press;
+                    System.out.println(buttonText+keyhold);
+                    r.addElement(release);
+                    addText(v);
+                    //disp(buttonText+keyhold);
+
+                }
+
+                return true;
+            }
+
+        });
+
+
+        //t
+        mB[19].setOnTouchListener(new OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+
+                String buttonText = (String)v.getTag();
+                if(event.getAction() == MotionEvent.ACTION_DOWN) {
+                    press = System.currentTimeMillis();
+                    text.addElement(buttonText);
+                    p.addElement(press);
+                }
+                else if (event.getAction() == MotionEvent.ACTION_UP) {
+                    release = System.currentTimeMillis();
+                    keyhold=release-press;
+                    System.out.println(buttonText+keyhold);
+                    r.addElement(release);
+                    addText(v);
+                    //disp(buttonText+keyhold);
+
+                }
+
+                return true;
+            }
+
+        });
+
+        //u
+
+        mB[20].setOnTouchListener(new OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+
+                String buttonText = (String)v.getTag();
+                if(event.getAction() == MotionEvent.ACTION_DOWN) {
+                    press = System.currentTimeMillis();
+                    text.addElement(buttonText);
+                    p.addElement(press);
+                }
+                else if (event.getAction() == MotionEvent.ACTION_UP) {
+                    release = System.currentTimeMillis();
+                    keyhold=release-press;
+                    System.out.println(buttonText+keyhold);
+                    r.addElement(release);
+                    addText(v);
+                    //disp(buttonText+keyhold);
+
+                }
+
+                return true;
+            }
+
+        });
+
+        //v
+        mB[21].setOnTouchListener(new OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+
+                String buttonText = (String)v.getTag();
+                if(event.getAction() == MotionEvent.ACTION_DOWN) {
+                    press = System.currentTimeMillis();
+                    text.addElement(buttonText);
+                    p.addElement(press);
+                }
+                else if (event.getAction() == MotionEvent.ACTION_UP) {
+                    release = System.currentTimeMillis();
+                    keyhold=release-press;
+                    System.out.println(buttonText+keyhold);
+                    r.addElement(release);
+                    addText(v);
+                    //disp(buttonText+keyhold);
+
+                }
+
+                return true;
+            }
+
+        });
+
+
+        //w
+        mB[22].setOnTouchListener(new OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+
+                String buttonText = (String)v.getTag();
+                if(event.getAction() == MotionEvent.ACTION_DOWN) {
+                    press = System.currentTimeMillis();
+                    text.addElement(buttonText);
+                    p.addElement(press);
+                }
+                else if (event.getAction() == MotionEvent.ACTION_UP) {
+                    release = System.currentTimeMillis();
+                    keyhold=release-press;
+                    System.out.println(buttonText+keyhold);
+                    r.addElement(release);
+                    addText(v);
+                    //disp(buttonText+keyhold);
+
+                }
+
+                return true;
+            }
+
+        });
+
+        //x
+        mB[23].setOnTouchListener(new OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+
+                String buttonText = (String)v.getTag();
+                if(event.getAction() == MotionEvent.ACTION_DOWN) {
+                    press = System.currentTimeMillis();
+                    text.addElement(buttonText);
+                    p.addElement(press);
+                }
+                else if (event.getAction() == MotionEvent.ACTION_UP) {
+                    release = System.currentTimeMillis();
+                    keyhold=release-press;
+                    System.out.println(buttonText+keyhold);
+                    r.addElement(release);
+                    addText(v);
+                    //disp(buttonText+keyhold);
+
+                }
+
+                return true;
+            }
+
+        });
+
+        //y
+        mB[24].setOnTouchListener(new OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+
+                String buttonText = (String)v.getTag();
+                if(event.getAction() == MotionEvent.ACTION_DOWN) {
+                    press = System.currentTimeMillis();
+                    text.addElement(buttonText);
+                    p.addElement(press);
+                }
+                else if (event.getAction() == MotionEvent.ACTION_UP) {
+                    release = System.currentTimeMillis();
+                    keyhold=release-press;
+                    System.out.println(buttonText+keyhold);
+                    r.addElement(release);
+                    addText(v);
+                    //disp(buttonText+keyhold);
+
+                }
+
+                return true;
+            }
+
+        });
+
+        //z
+        mB[25].setOnTouchListener(new OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+
+                String buttonText = (String)v.getTag();
+                if(event.getAction() == MotionEvent.ACTION_DOWN) {
+                    press = System.currentTimeMillis();
+                    text.addElement(buttonText);
+                    p.addElement(press);
+                }
+                else if (event.getAction() == MotionEvent.ACTION_UP) {
+                    release = System.currentTimeMillis();
+                    keyhold=release-press;
+                    System.out.println(buttonText+keyhold);
+                    r.addElement(release);
+                    addText(v);
+                    //disp(buttonText+keyhold);
+
+                }
+
+                return true;
+            }
+
+        });
 
 
 }
