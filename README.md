@@ -1,3 +1,3 @@
 # AndroidIDS
 AndroidIDS
-Intrusion Detection System for mobile android devices.
+An Intrusion Detection System for mobile android devices.
